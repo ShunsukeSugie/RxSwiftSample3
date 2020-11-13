@@ -36,6 +36,7 @@ class NewsTableViewController: UITableViewController {
                 self.articles = articles
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
+                    print("revert")
                 }
             }
             }).disposed(by: disposeBag)
